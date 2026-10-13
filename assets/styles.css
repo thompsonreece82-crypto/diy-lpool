@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap');
+:root{font-synthesis:none;--bg:#281447;--violet:#34125b;--lime:#bcff4f;--pink:#fc76db;--mint:#60f5a6;--yellow:#f4e85b;--text:#faf2ff;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 10% 7%,#4f216d 0%,transparent 42%),radial-gradient(ellipse at 93% 90%,#174f4f 0%,transparent 44%),#281447;color:var(--text);font-family:'Kalam','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif}
+body::before{content:'';position:fixed;inset:0;opacity:.14;pointer-events:none;z-index:-1;background-image:radial-gradient(#ffacf9 1.2px,transparent 1.5px);background-size:16px 16px;mask-image:linear-gradient(130deg,#000,transparent 75%)}
+a{color:inherit}
+a:focus-visible{outline:3px solid #fff973;outline-offset:4px}
+.skip-link{position:fixed;top:-60px;left:10px;z-index:1000;padding:10px;background:var(--lime);color:#1b1039;font:700 14px 'Space Mono','Cousine',monospace}
+.skip-link:focus{top:10px}
+.ambient-splat{position:fixed;z-index:-1;pointer-events:none;opacity:.16;clip-path:polygon(48% 0%,56% 30%,80% 6%,73% 38%,100% 45%,73% 57%,93% 89%,64% 70%,48% 100%,42% 69%,7% 89%,28% 56%,0% 47%,29% 40%,13% 8%,42% 29%);width:450px;aspect-ratio:1;background:var(--pink)}
+.ambient-splat--one{top:-155px;right:-170px;transform:rotate(25deg)}
+.ambient-splat--two{bottom:-245px;left:-185px;transform:rotate(-20deg);background:var(--mint)}
+.top-strip{min-height:58px;max-width:1440px;margin:auto;padding:15px clamp(18px,3.5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:18px;color:#def9a2;font:700 clamp(10px,1.1vw,13px)/1.3 'Space Mono','Cousine',monospace;letter-spacing:.05em}
+.top-strip a{text-decoration:none;color:var(--yellow)}
+.top-strip a:hover{text-decoration:underline;text-decoration-style:wavy}
+.site-layout{position:relative;display:grid;grid-template-columns:minmax(0,660px) minmax(255px,365px);gap:clamp(25px,5.5vw,76px);justify-content:center;align-items:start;padding:9px clamp(16px,3.5vw,48px) 20px;max-width:1450px;margin:auto}
+.poster-holder{width:100%;max-width:660px;margin:0 auto}
+.poster{width:100%;margin:0;position:relative;isolation:isolate;box-shadow:16px 18px 0 #080b30,19px 21px 0 2px #bdff52;transform:rotate(-.35deg);background:#bf4eac}
+.poster img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
+.poster-footnote{display:flex;gap:10px;justify-content:space-between;align-items:start;margin:25px 0 5px;font:700 10px/1.5 'Space Mono','Cousine',monospace;letter-spacing:.03em;color:#dbbbeb}
+.cover-aside,.day-aside{min-width:0;position:sticky;top:18px;padding:22px 0}
+.scribble-kicker{font:700 15px/1.3 'Space Mono','Cousine',monospace;color:var(--mint);letter-spacing:-.04em}
+.cover-aside h1{font:400 clamp(68px,7vw,112px)/.89 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;letter-spacing:-.08em;margin:20px 0 17px;transform:rotate(-3deg);color:var(--yellow);text-shadow:5px 5px 0 #f2217a}
+.cover-aside h1 em{color:#70f5b5;font-style:normal;padding-left:18px}
+.cover-aside>p{font:700 15px/1.45 'Kalam','Chalkboard SE','Comic Neue',sans-serif;max-width:280px;color:#f8c8f5}
+.cover-sticker{height:70px;margin:-7px 0 0 38px;font:100px/.6 'Kalam','Chalkboard SE','Comic Neue',sans-serif;color:#fc79cb;transform:rotate(16deg)}
+.cover-day-buttons{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:0 0 25px}
+.cover-day-buttons a{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:94px;padding:11px 15px 8px;border:2px solid var(--ticket);border-radius:3px 11px 2px 9px;color:var(--ticket);background:color-mix(in srgb,var(--ticket) 8%,transparent);text-decoration:none;transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease}
+.cover-day-buttons a:nth-child(1){transform:rotate(-3deg)}.cover-day-buttons a:nth-child(2){transform:rotate(2deg)}.cover-day-buttons a:nth-child(3){transform:rotate(2deg)}.cover-day-buttons a:nth-child(4){transform:rotate(-2deg)}
+.cover-day-buttons a:hover,.cover-day-buttons a:focus-visible{transform:translateY(-7px) rotate(0deg);background:color-mix(in srgb,var(--ticket) 24%,transparent);box-shadow:6px 6px 0 #ef63b6}
+.cover-day-buttons a>span{font:400 34px/1 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif}
+.cover-day-buttons a>small{align-self:end;font:700 11px/1 'Space Mono','Cousine',monospace}
+.cover-aside .fineprint{font:700 11px/1.7 'Space Mono','Cousine',monospace;color:#a5f0e0}
+.side-doodle{font:55px/1 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;color:#f698fb;transform:rotate(-9deg);margin-top:17px}.side-doodle span{color:var(--lime)}
+.day-aside{padding-top:17px}
+.back-home{font:700 12px/1.3 'Space Mono','Cousine',monospace;text-decoration:none;border-bottom:2px dotted var(--accent);color:var(--accent)}
+.back-home:hover{color:#fff}
+.day-aside .scribble-kicker{display:block;margin-top:43px;color:#e995e7}
+.day-aside h1{font:400 clamp(67px,8vw,116px)/1 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;margin:4px 0 5px;color:var(--accent);text-shadow:4px 5px 0 #831e74;transform:rotate(-2deg)}
+.h1-star{font-size:36px;color:var(--yellow);vertical-align:top;display:inline-block;transform:rotate(22deg);margin:5px 0 0 7px}
+.aside-intro{font:700 13px/1.65 'Space Mono','Cousine',monospace;color:#ead2f4;margin:13px 0 26px}
+.day-aside h2{font:400 25px/1.2 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;color:var(--yellow);margin:0 0 10px;transform:rotate(-1.5deg)}
+.day-aside h2 span{color:var(--accent)}
+.stop-list{display:grid;gap:5px}
+.stop-list-item{position:relative;display:grid;grid-template-columns:75px minmax(0,1fr) 15px;align-items:center;gap:9px;min-height:52px;padding:8px 7px 8px 11px;border:1px dashed #a574b6;background:rgba(22,13,43,.26);text-decoration:none;transition:border-color .15s,background-color .15s,transform .15s}
+.stop-list-item:hover,.stop-list-item:focus-visible{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 15%,#281447);transform:translateX(4px)}
+.stop-list-item__time{color:var(--accent);font:700 10px/1.3 'Space Mono','Cousine',monospace}
+.stop-list-item__name{font:700 15px/1.1 'Kalam','Chalkboard SE','Comic Neue',sans-serif}
+.stop-list-item__out{font:22px/.8 'Kalam','Chalkboard SE','Comic Neue',sans-serif;color:var(--accent)}
+.day-aside-bottom{margin-top:28px}
+.day-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.day-nav a{padding:7px 2px;border:1px solid var(--ticket);background:transparent;color:var(--ticket);text-decoration:none;text-align:center;transform:rotate(-2deg);transition:background .15s,transform .15s}
+.day-nav a:hover,.day-nav a:focus-visible{background:color-mix(in srgb,var(--ticket) 25%,transparent);transform:translateY(-3px)}
+.day-nav a[aria-current="page"]{background:color-mix(in srgb,var(--ticket) 22%,transparent);border-width:2px}
+.day-nav a span{display:block;font:19px/1 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif}
+.day-nav a small{font:8px/1.6 'Space Mono','Cousine',monospace}
+.paper-note{margin:22px auto 0;padding:14px 13px;background:#eff179;color:#4d2650;font:18px/1.3 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;max-width:295px;clip-path:polygon(0 4%,99% 0,100% 92%,2% 100%);transform:rotate(2deg)}
+.stop-hotspot{position:absolute;z-index:3;left:var(--x);top:var(--y);width:var(--w);height:var(--h);display:block;border:2px dashed transparent;border-radius:4px;transition:background-color .18s,border-color .18s,filter .18s;text-decoration:none;-webkit-tap-highlight-color:rgba(242,241,93,.28)}
+.stop-hotspot:hover,.stop-hotspot:focus-visible{background:rgba(255,251,91,.18);border-color:#feff9e;box-shadow:inset 0 0 0 2px rgba(51,6,84,.25)}
+.stop-hotspot:focus-visible{outline:3px solid white;outline-offset:0}
+.stop-hotspot__badge{position:absolute;right:6px;top:4px;display:block;font:700 clamp(7px,1.45vw,12px)/1.2 'Space Mono','Cousine',monospace;letter-spacing:-.05em;background:#f5fb77;color:#40144f;transform:rotate(6deg) scale(.94);padding:4px 6px;border:1px solid #40144f;box-shadow:2px 2px 0 #e22ca0;opacity:0;transition:opacity .15s,transform .15s}
+.stop-hotspot:hover .stop-hotspot__badge,.stop-hotspot:focus-visible .stop-hotspot__badge{opacity:1;transform:rotate(3deg) scale(1)}
+.mobile-dock{display:none}
+.site-footer{text-align:center;padding:12px 15px 32px;margin:15px auto;color:#c19cc6;font:700 10px/1.5 'Space Mono','Cousine',monospace;letter-spacing:.04em}
+@media (min-width:1100px){.site-layout{grid-template-columns:minmax(0,700px) minmax(320px,380px)}.poster-holder{max-width:700px}}
+@media (max-width:850px){.site-layout{grid-template-columns:minmax(0,1fr);padding:8px clamp(8px,2vw,24px) 4px;gap:20px}.poster-holder{max-width:min(620px,100%)}.cover-aside,.day-aside{position:static;max-width:620px;width:100%;margin:10px auto 0;padding:18px 12px}.cover-aside h1{font-size:72px}.cover-aside .cover-sticker{display:none}.cover-day-buttons{max-width:450px}.day-aside h1{font-size:76px}.day-aside .scribble-kicker{margin-top:18px}.poster{box-shadow:7px 9px 0 #09082a,9px 11px 0 1px #bdff52}.top-strip{min-height:46px;padding:10px 16px}.mobile-dock{display:flex;justify-content:space-between;align-items:stretch;gap:4px;position:fixed;z-index:20;bottom:calc(8px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:min(calc(100vw - 16px),600px);padding:7px;background:rgba(31,11,54,.94);border:1px solid #f4e85b;border-radius:12px;box-shadow:0 6px 18px #0009;backdrop-filter:blur(10px)}.mobile-dock a{flex:1 1 auto;min-width:0;border:1px solid color-mix(in srgb,var(--ticket,#f4e85b) 72%,transparent);border-radius:5px;display:grid;place-items:center;padding:10px 3px;color:var(--ticket,#f4e85b);font:clamp(15px,4.2vw,23px)/1 'Permanent Marker','Marker Felt','Chalkboard SE','Comic Sans MS','Comic Neue',sans-serif;text-decoration:none}.mobile-dock a[aria-current="page"]{background:color-mix(in srgb,var(--ticket) 25%,transparent);border-width:2px}.mobile-dock a.dock-home{max-width:53px;color:#faf6ef;font-size:24px}.mobile-dock a:active{background:rgba(249,254,80,.22)}.site-footer{padding-bottom:calc(95px + env(safe-area-inset-bottom))}}
+@media (hover:none),(pointer:coarse){.stop-hotspot__badge{opacity:1;transform:rotate(6deg);font-size:clamp(6px,2.6vw,11px);padding:2px 3px;right:2px;top:3px;box-shadow:1px 1px 0 #e22ca0}.stop-hotspot{border-color:rgba(242,251,99,.22)}.stop-hotspot:active{background:rgba(250,244,98,.23)}}
+@media (max-width:480px){.top-strip{font-size:9px}.poster-footnote{margin:17px 5px 5px;font-size:8px}.cover-aside>p{max-width:100%}.cover-aside h1{font-size:62px}.cover-day-buttons a>span{font-size:30px}.day-aside{padding-top:10px}.day-aside h1{font-size:68px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
